@@ -1,0 +1,22 @@
+{
+  "name": "timbot3030",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "now -e CONSUMER_KEY=@ds-twit-key -e CONSUMER_SECRET=@ds-twit-secret -e ACCESS_TOKEN=@ds-twit-access  -e ACCESS_TOKEN_SECRET=@ds-twit-access-secret"
+  },
+  "now": {
+    "alias": "timbot3030",
+    "files": [
+      "src",
+      "index.js"
+    ]
+  },
+  "author": "Tim Abrahamson",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "twit": "^2.2.11"
+  }
+}
